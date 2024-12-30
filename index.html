@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <h1>Signup</h1>
         <form>
             <div>
-                <label for="firstname">
-                    <svg src=""></svg>
+                <label for="firstname-input">
+                    <img src="images/person_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" >
                 </label>
                 <input required type="text" name="firstname" id="firstname-input" placeholder="First name">
             </div>
             <div>
-                <input type="text" name="email" id="email-input" placeholder="Mail">
+                <label for="email-input">
+                    <span>@</span>
+                </label>
+                <input required type="email" name="email" id="email-input" placeholder="Mail">
             </div>
             <div>
-                <input type="password" name="password" id="password" placeholder="Password">
+                <label for="password-input">
+                    <img src="images/lock_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="Password Icon">
+                </label>
+                <input required type="password" name="password" id="password-input" placeholder="Password">
             </div>
             <div>
-                <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat password">
+                <label for="repeat-password-input">
+                    <img src="images/lock_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="Repeat Password Icon">
+                </label>
+                <input required type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat password">
             </div>
             <button type="submit">Signup</button>
         </form>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
     </div>
 </body>
 </html>
