@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script> <!-- defer sørger for at javascript koden kjøres NÅR html er loaded inn -->
 </head>
 <body>
     <div class="wrapper">
         <h1>Signup</h1>
-        <form>
+        <p id="error-message"></p>
+        <form id="form">
             <div>
                 <label for="firstname-input">
                     <img src="images/person_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" >
                 </label>
-                <input required type="text" name="firstname" id="firstname-input" placeholder="First name">
+                <input type="text" name="firstname" id="firstname-input" placeholder="Firstname">
             </div>
             <div>
                 <label for="email-input">
                     <span>@</span>
                 </label>
-                <input required type="email" name="email" id="email-input" placeholder="Mail">
+            <input type="email" name="email" id="email-input" placeholder="Email">
             </div>
             <div>
                 <label for="password-input">
-                    <img src="images/lock_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="Password Icon">
+                    <img src="images/lock_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
                 </label>
-                <input required type="password" name="password" id="password-input" placeholder="Password">
+                <input type="password" name="password" id="password-input" placeholder="Password">
             </div>
             <div>
                 <label for="repeat-password-input">
-                    <img src="images/lock_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg" alt="Repeat Password Icon">
+                    <img src="images/lock_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg">
                 </label>
-                <input required type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat password">
+                <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password">
             </div>
             <button type="submit">Signup</button>
         </form>
